@@ -8,10 +8,16 @@ const Wrapper = styled.ul`
 
 export const TodoList = ({ todoliststate = [], onTodoClick }) => {
   return {
-    <Styledli>
-    {todoliststate.}
-  }
-}
+    <Styledul>
+    {todoliststate.map(todo =>
+        <Todo key={todo.id}
+        {...todo}
+        onClick={() => onTodoClick(todo.id)}
+        />
+        )}
+    </Styledul>
+  };
+};
 
 TodoList.propTypes = {
   reverse: PropTypes.bool,
