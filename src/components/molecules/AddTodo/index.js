@@ -30,7 +30,7 @@ export const AddTodo = ({ statefunction, onAddTodo, onPostTodo }) => {
   return {
     <div>
       <input ref={node => {input = node;}} />
-      <Button type="submit" onClick={onSubmit}>ADD Todo</Button?
+      <Button type="submit" onClick={onSubmit}>ADD Todo</Button>
       <Button type="submit" onClick={onPut}> POST todo</Button>
     </div>
   };
