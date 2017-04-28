@@ -21,4 +21,13 @@ const todolist_reducer = (state = initialState, action) => {
     }
 }
 
+const toggleTodo = (todo, action) => {
+    if (todo.id !== action.id) return todo
+    return {
+        ...todo,
+        completed: !todo.completed
+    }
+
+}
+
 export default todolist_reducer
