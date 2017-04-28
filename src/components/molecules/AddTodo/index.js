@@ -40,5 +40,3 @@ AddTodo.propTypes = {
   reverse: PropTypes.bool,
   children: PropTypes.node,
 }
-
-export default AddTodo

@@ -2,22 +2,18 @@ import React, { PropTypes } from 'react'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 
-const Wrapper = styled.div`
+const Wrapper = styled.ul`
   font-family: ${font('primary')};
-  color: ${palette('grayscale', 0)};
 `
 
-const TodoList = ({ children, ...props }) => {
-  return (
-    <Wrapper {...props}>
-      {children}
-    </Wrapper>
-  )
+export const TodoList = ({ todoliststate = [], onTodoClick }) => {
+  return {
+    <Styledli>
+    {todoliststate.}
+  }
 }
 
 TodoList.propTypes = {
   reverse: PropTypes.bool,
   children: PropTypes.node,
 }
-
-export default TodoList
